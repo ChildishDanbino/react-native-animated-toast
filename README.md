@@ -31,3 +31,14 @@ import AnimatedNotification from 'react-native-animated-toast';
   <Text>A Test Message</Text>
 </AnimatedNotification>
 ```
+
+### Props
+
+* Note: Unlike most Notification Libs you pass a component in as children to render the message. This gives the user full control over styling / adding additional functionaltiy to the Notification
+
+Name                | Default                  |  Type    | Description
+--------------------|--------------------------|----------|---------------------------
+topPosition         | 40                       | Number   | The Top Position for the Component to Animate to
+visible             | false                    | Bool     | The visibility of Notification
+hideDuration        | 2000                     | Number   | The duration (ms) the Notification is visible before auto hiding
+children            | NA (Required)            | Node     | Children Components to render usually a <Text> Element
