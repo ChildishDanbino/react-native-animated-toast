@@ -47,16 +47,16 @@ export default class AnimatedNotification extends Component {
 	}
 
 	render() {
-		const { message } = this.props;
 		return (
 			<AnimatedView onPress={this.hideNotification} style={{ top: this.state.top }}>
-				<Text>{message}</Text>
+				{this.props.children}
 			</AnimatedView>
 	);
 	}
 }
 
 AnimatedNotification.propTypes = {
+	children: PropTypes.node.isRequired,
 	message: PropTypes.string,
 	visible: PropTypes.bool
 };
