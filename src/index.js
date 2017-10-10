@@ -16,11 +16,6 @@ export default class AnimatedNotification extends Component {
 		};
 	}
 
-	componentWillMount() {
-		console.log(this.state.top, this.state.visible);
-		console.log(this.props);
-	}
-
 	componentWillReceiveProps(nextProps) {
 		const displayNotification = !this.props.visible && nextProps.visible;
 		const hideNotification = this.props.visible && !nextProps.visible;
