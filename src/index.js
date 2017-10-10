@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const AnimatedView = Animated.createAnimatedComponent(TouchableOpacity);
 
-export default class Notification extends Component {
+export default class AnimatedNotification extends Component {
 	constructor(props) {
 		super(props);
 		this.showNotification = this.showNotification.bind(this);
@@ -56,12 +56,12 @@ export default class Notification extends Component {
 	}
 }
 
-Notification.propTypes = {
+AnimatedNotification.propTypes = {
 	message: PropTypes.string,
 	visible: PropTypes.bool
 };
 
-Notification.defaultProps = {
+AnimatedNotification.defaultProps = {
 	visible: false,
 	message: null
 };
