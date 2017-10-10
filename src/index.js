@@ -16,6 +16,11 @@ export default class AnimatedNotification extends Component {
 		};
 	}
 
+	componentWillMount() {
+		console.log(this.state.top, this.state.visible);
+		console.log(this.props);
+	}
+
 	componentWillReceiveProps(nextProps) {
 		const displayNotification = !this.props.visible && nextProps.visible;
 		const hideNotification = this.props.visible && !nextProps.visible;
@@ -57,12 +62,14 @@ export default class AnimatedNotification extends Component {
 
 AnimatedNotification.propTypes = {
 	children: PropTypes.node.isRequired,
-	message: PropTypes.string,
-	visible: PropTypes.bool
+	visible: PropTypes.bool,
+	topPosition: PropTypes.number,
+	hideDuration: PropTypes.number
 };
 
 AnimatedNotification.defaultProps = {
-	visible: false,
-	message: null
+	hideDuration: 2000,
+	topPosition: 40,
+	visible: false
 };
 
