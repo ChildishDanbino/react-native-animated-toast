@@ -1,6 +1,6 @@
 {
 	"name": "react-native-animated-toast",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Animated Toast Notification for React Native",
 	"main": "src/index.js",
 	"scripts": {
