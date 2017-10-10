@@ -48,7 +48,7 @@ export default class AnimatedNotification extends Component {
 
 	render() {
 		return (
-			<AnimatedView onPress={this.hideNotification} style={{ top: this.state.top }}>
+			<AnimatedView onPress={this.hideNotification} style={{ ...this.props.style, top: this.state.top }}>
 				{this.props.children}
 			</AnimatedView>
 	);

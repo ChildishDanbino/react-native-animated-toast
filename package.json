@@ -20,9 +20,5 @@
 	"bugs": {
 		"url": "https://github.com/Daadler6/react-native-animated-toast/issues"
 	},
-	"homepage": "https://github.com/Daadler6/react-native-animated-toast",
-	"dependencies": {
-		"react-native-root-siblings": "^1.2.1",
-		"prop-types": "^15.5.10"
-	}
+	"homepage": "https://github.com/Daadler6/react-native-animated-toast"
 }
