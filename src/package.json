@@ -1,0 +1,24 @@
+{
+	"name": "react-native-animated-toast",
+	"version": "1.0.1",
+	"description": "Animated Toast Notification for React Native",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Daadler6/react-native-animated-toast"
+	},
+	"keywords": [
+		"react",
+		"reactnative",
+		"notification"
+	],
+	"author": "Daniel Adler",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Daadler6/react-native-animated-toast/issues"
+	},
+	"homepage": "https://github.com/Daadler6/react-native-animated-toast"
+}
